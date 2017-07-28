@@ -1,0 +1,92 @@
+<!--
+.SYNOPSIS
+    XML Config File
+
+.NOTES
+    Version:        1.0
+    Author:         Andreas Hansen
+    Creation Date:  20/02/2014
+    Purpose/Change: Config File
+-->
+<?xml version="1.0"?>
+<configuration>
+    <appSettings>
+        <!-- V E R S I O N -->
+        <add key="version" value="0.9.1" />
+        <!-- DEFINE SCRIPT RUN MODE, AVAILABLE OPTIONS ARE:                     -->
+        <!-- TEST / Run the Script and returns a table with folders and actions -->
+        <!-- RUN  / Run the script normally                                     -->
+        <add key="runMode" value="RUN" />
+        <!--                                  -->
+        <!-- G E N E R A L  - S E T T I N G S -->
+        <!--                                  -->
+        <!-- Fileserver -->
+        <add key="runas" value="svc_pfolder" />
+        <!-- Fileserver -->
+        <add key="fileserver" value="fscluster07" />
+        <!-- Define Error Mode -->
+        <add key="errorMode" value="Stop" />
+        <!-- Modules needed PSCX for Folder Ownership, POSH Security for ACL -->
+        <add key="modules" value="Pscx,Microsoft.PowerShell.Security"/>
+        <!-- Dell Quest Snapin -->
+        <add key="snapin" value="Quest.Activeroles.ADManagement" />
+        <!-- Base folder of Script -->
+        <add key="homeFolder" value="c:\pFolder"/>
+        <!-- Home Letter to Map Drive -->
+        <add key="homeDrive" value="U:"/>
+        <!-- Base Directory of Users Folders -->
+        <add key="baseDir" value="E:" />
+        <!-- Archiving Directory -->
+        <add key="archivingDir" value="_ARCHIVING" />
+        <!-- Retention Days -->
+        <add key="retentionDays" value="90" />
+        <!--                                     -->
+        <!-- D I R E C T O R Y - S E T T I N G S -->
+        <!--                                     -->
+        <!-- Domain -->
+        <add key="domain" value="CONTOSO" />
+        <!-- Base OU to Search for Users -->
+        <add key="baseOU" value="CONTOSO.LOCAL" />
+        <!-- Initialy name of quota groups -->
+        <add key="groupBaseName" value="GG_FSQUOTA_FS01_" />
+        <!-- Where to find quota groups -->
+        <add key="groupBaseOU" value="CONTOSO.LOCAL/Groups" />
+        <!-- Owner of user folders after ownership -->
+        <add key="dirOwner" value="CONTOSO\Domain Admins" />
+        <!--                                -->
+        <!-- L I M I T S  - S E T T I N G S -->
+        <!--                                -->
+        <!-- Days since last logon for users -->
+        <add key="lastLogonDays" value="90" />
+        <!-- Users initiaiting with these names, are ignored -->
+        <add key="ignoredUsersPre" value="adm,svc" />
+        <!-- File with names to be ignored when searching users -->
+        <add key="ignoredUsersFile" value="ignored.txt" />
+        <!--                          -->
+        <!-- L O G  - S E T T I N G S -->
+        <!--                          -->
+        <!-- Event Viewer Source -->
+        <add key="evSource" value="pFolder" />
+        <!-- Log Path -->
+        <add key="logPath" value="log" />
+        <!-- LogFile Name -->
+        <add key="logFileName" value="pFolder" />
+        <!--                              -->
+        <!-- E M A I L  - S E T T I N G S -->
+        <!--                              -->
+        <!-- Email Server -->
+        <add key="server" value="mail.contoso.com" />
+        <!-- User Auth -->
+        <add key="user" value="svc_pfolder" />
+        <!-- User Password -->
+        <add key="password" value="12345" />
+        <!-- Mail From -->
+        <add key="from" value="pfolder@contoso.com" />
+        <!-- Mail To -->
+        <add key="to" value="pfolder@contoso.com" />
+        <!-- Mail Subject -->
+        <add key="subject" value="[pFolder] - Execution Log" />
+        <!-- Mail Template -->
+        <add key="mailTemplate" value="mailTemplate.htm" />
+    </appSettings>
+</configuration>
