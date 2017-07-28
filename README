@@ -1,0 +1,21 @@
+MANUAL OPERACIONAL pFolder 0.9.1
+
+1. SOBRE O PFOLDER
+
+O script intitulado “pFolder” é responsável pela execução das atividades relacionadas à unidade particular de dados, desde a sincronização com os grupos de quota, criação de pastas, definição de permissões e criação do compartilhamento. Neste documento são apresentadas as funcionalidades, customizações e possibilidades de execução da ferramenta.
+
+2. DO AMBIENTE
+
+O pFolder foi desenvolvido em ambiente Windows 7 64bits, linguagem PowerShell 3.0, utilizando-se da IDE PowerGui. Adicionalmente, foram utilizados dois módulos – sendo um externo – e um snappin. Para a plena execução posterior do script, é necessária a instalação dos módulos externos, sendo que os mesmos sofrem por parte do script a validação no início de sua execução. Abaixo, as descrições das versões de cada um dos módulos e linguagem:
+Linguagem
+	Powershell versão 3.0 – 64bits
+	Info: http://www.microsoft.com/en-us/download/details.aspx?id=34595
+Módulo Nativo
+	PowerShell Security Module
+	Info: http://technet.microsoft.com/en-us/library/hh847877(v=wps.620).aspx
+Módulo Externo
+	PowerShell Community Extensions
+ Info: http://pscx.codeplex.com
+Snappin
+	ActiveRoles Management Shell for Active Directory
+	Info: http://www.quest.com/powershell/activeroles-server.aspx
