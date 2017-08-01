@@ -1,11 +1,14 @@
 pFolder
 
 ABOUT
-This script was created for Active Directory personal folder management, quota and permission related tasks.
+Script created for Active Directory personal folder management, quota and permission related tasks.
+
+INFO
+http://andreas.com.br/gerencia-de-pastas-particulares-com-powershell/
 
 DETAILS
 Language
-   Powershell versão 3.0 – 64bits
+   Powershell 3.0 – 64bits
    Info: http://www.microsoft.com/en-us/download/details.aspx?id=34595
 
 Native Module
